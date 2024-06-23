@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanillatweaker",
+	"version": "${version}",
+	"name": "Vanilla Tweaker",
+	"description": "An opinionated vanilla styled Minecraft tweaker.",
+	"authors": [
+		"BananaPuppy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/vanillatweaker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bananapuppy.vanillatweaker.VanillaTweaker"
+		],
+		"client": [
+			"com.bananapuppy.vanillatweaker.VanillaTweakerClient"
+		],
+		"fabric-datagen": [
+			"com.bananapuppy.vanillatweaker.VanillaTweakerDataGenerator"
+		]
+	},
+	"mixins": [
+		"vanillatweaker.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
