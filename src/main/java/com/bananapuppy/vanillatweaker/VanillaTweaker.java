@@ -1,5 +1,7 @@
 package com.bananapuppy.vanillatweaker;
 
+import com.bananapuppy.vanillatweaker.registries.ModBlocks;
+import com.bananapuppy.vanillatweaker.registries.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +13,12 @@ public class VanillaTweaker implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		LOGGER.info("Initializing " + MOD_ID);
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Registering Blocks for " + MOD_ID);
+		ModBlocks.registerModBlocks();
+
+		LOGGER.info("Registering Items for " + MOD_ID);
+		ModItems.registerModItems();
 	}
 }

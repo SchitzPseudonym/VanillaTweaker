@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model": "vanillatweaker:block/charcoal_block" }
+  }
+}
